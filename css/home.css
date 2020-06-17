@@ -9,6 +9,10 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
+h2 {
+  font-weight: normal;
+}
+
 .navbar {
   background: black;
   height: 4em;
@@ -70,7 +74,7 @@ a {
   grid-column-gap: 2em;
   grid-row-gap: 0;
   width: 100%;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .post {

@@ -6,8 +6,18 @@ function renderStories() {
   let mainData = db.collection("data").doc("main");
   mainData.get().then(function(doc) {
     if (doc.exists) {
-      let featuredImg = document.createElement("img");
-      generatePost(1);
+      db.collection("posts").where("Canonical", "==", doc.data().canon).get().then(function(querySnapshot) {
+        console.log(querySnapshot);
+        querySnapshot.forEach(function(docc) {
+          document.getElementById("featured-link").href = "read.html?s=" + docc.id;
+          document.getElementById("featured-img").src = docc.data().Image;
+          document.getElementById("featured-title").innerText = docc.data().Title;
+          document.getElementById("featured-subtitle").innerText = docc.data().Subtitle;
+        })
+        for (let i = 1; i < 17; i++) {
+          generatePost(doc.data().canon - i)
+        }
+      })
     } else {
       window.location.reload();
     }
@@ -25,7 +35,6 @@ function generatePost(canonNum) {
   let articleRef = db.collection("posts").where("Canonical", "==", canonNum);
   articleRef.get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
-      console.log(doc);
       post.href = "read.html?s=" + doc.id;
       post.classList.add("post")
       image.src = doc.data().Image;
