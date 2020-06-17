@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Scratch Informant | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <img src="assets/logo-white.svg" alt="The Informant">
+  </div><br>
+  <div class="main">
+    <a href="#">
+      <div class="featured-post">
+        <img id="featured-img" src="https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=649&q=80"></img>
+        <h2 id="featured-title"></h2>
+        <p id="featured-subtitle"></p>
+      </div>
+    </a>
+    <br><br>
+    <div class="other-posts">
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBQ8zhsj2m9FDRrlIdQi7lnJn0wxYY8yIU",
+        authDomain: "scratch-informant.firebaseapp.com",
+        databaseURL: "https://scratch-informant.firebaseio.com",
+        projectId: "scratch-informant",
+        storageBucket: "scratch-informant.appspot.com",
+        messagingSenderId: "238244990742",
+        appId: "1:238244990742:web:8a05b85706ffe2309a4a37"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script type="text/javascript" src="home.js">
+    </script>
+</body>
+
+</html>

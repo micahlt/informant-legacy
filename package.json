@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/micahlt/scratch-informant/issues"
   },
-  "homepage": "https://github.com/micahlt/scratch-informant#readme"
+  "homepage": "https://github.com/micahlt/scratch-informant#readme",
+  "dependencies": {
+    "firebase": "^7.15.1"
+  }
 }
