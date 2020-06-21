@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="titleHtml">Story | The Scratch Informant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/read.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="home.html"><img src="assets/logo-white.svg" alt="The Informant"></a>
+  </div><br>
+  <div id="fourOhFour">
+    <div class="absolute-center">
+      <h1>404</h1>
+      <p>we couldn't find this story.</p>
+    </div>
+  </div>
+  <div class="main">
+    <img id="post-img" src="https://www.publicdomainpictures.net/pictures/30000/velka/plain-white-background.jpg"></img>
+    <div class="post-content">
+      <h2 id="post-title"></h2>
+      <p id="post-subtitle"></p>
+      <p class="small-text"><em><span id="post-author"></span> on <span id="post-date"></span></em></p><br>
+      <p id="post-para"></p>
+    </div>
+    <br><br>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBQ8zhsj2m9FDRrlIdQi7lnJn0wxYY8yIU",
+        authDomain: "scratch-informant.firebaseapp.com",
+        databaseURL: "https://scratch-informant.firebaseio.com",
+        projectId: "scratch-informant",
+        storageBucket: "scratch-informant.appspot.com",
+        messagingSenderId: "238244990742",
+        appId: "1:238244990742:web:8a05b85706ffe2309a4a37"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script type="text/javascript" src="read.js">
+    </script>
+</body>
+
+</html>
