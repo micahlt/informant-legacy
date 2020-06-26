@@ -61,7 +61,7 @@ h2 {
 
 .featured-post p {
   font-size: 1.3em;
-  line-height: 2px;
+  line-height: 1em;
 }
 
 a {
@@ -98,4 +98,23 @@ a {
 
 .post img {
   height: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+  .other-posts {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .post {
+    max-width: 40vw;
+    transform: translateY(-40%);
+    transition: 0.2s;
+  }
+
+  .post-img-container {
+    width: 40vw;
+    height: 30vw;
+    overflow: hidden;
+    object-fit: cover;
+  }
 }
