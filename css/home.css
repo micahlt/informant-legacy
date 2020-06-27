@@ -74,14 +74,14 @@ a {
   grid-column-gap: 2em;
   grid-row-gap: 0;
   width: 100%;
-  margin-top: 9em;
+  margin-top: 3em;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .post {
   max-width: 20vw;
-  transform: translateY(-40%);
   transition: 0.2s;
+  margin-bottom: 2em;
 }
 
 .post:hover {
@@ -107,8 +107,8 @@ a {
 
   .post {
     max-width: 40vw;
-    transform: translateY(-40%);
     transition: 0.2s;
+    margin-bottom: 2.5em;
   }
 
   .post-img-container {
