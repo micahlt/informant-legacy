@@ -41,17 +41,16 @@ function renderStory() {
 }
 
 function generatePosts(tagsToGet) {
-  let post = document.createElement("a");
-  let image = document.createElement("img");
-  let imageContainer = document.createElement("div");
-  let title = document.createElement("h2");
-  let subtitle = document.createElement("p");
   let articleRef = db.collection("posts").where("Tags", "array-contains-any", tagsToGet);
   console.log(tagsToGet);
   articleRef.orderBy("Canonical").limit(4);
   articleRef.get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
-      console.log('Ready');
+      let post = document.createElement("a");
+      let image = document.createElement("img");
+      let imageContainer = document.createElement("div");
+      let title = document.createElement("h2");
+      let subtitle = document.createElement("p");
       post.href = "read.html?s=" + doc.id;
       post.classList.add("post")
       image.src = doc.data().Image;

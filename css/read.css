@@ -112,14 +112,6 @@ a {
   color: black;
 }
 
-.other-posts {
-  display: grid;
-  grid-column-gap: 2em;
-  grid-row-gap: 0;
-  width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
 .post {
   max-width: 20vw;
   transform: translateY(-40%);
@@ -133,7 +125,8 @@ a {
 
 .post-img-container {
   width: 100%;
-  padding-top: 75%;
+  padding-top: 10%;
+  border-radius: 0.3em;
 }
 
 .post img {
@@ -153,7 +146,7 @@ a:hover {
 #suggested {
   max-width: 20vw;
   position: absolute;
-  top: 1em;
+  top: calc(4em + 22vh);
   right: 4vw;
 }
 
