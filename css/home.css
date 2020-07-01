@@ -7,6 +7,7 @@
 body {
   overflow-x: hidden;
   font-family: 'Playfair Display', serif;
+  text-align: center;
 }
 
 h2 {
@@ -37,6 +38,7 @@ h2 {
   width: 90vw;
   padding-left: 5vw;
   padding-right: 5vw;
+  margin-bottom: 3em;
 }
 
 .featured-post {
@@ -55,11 +57,13 @@ h2 {
 }
 
 .featured-post h2 {
+  text-align: left;
   font-weight: normal;
   font-size: 3.3em;
 }
 
 .featured-post p {
+  text-align: left;
   font-size: 1.3em;
   line-height: 1em;
 }
@@ -82,6 +86,7 @@ a {
   max-width: 20vw;
   transition: 0.2s;
   margin-bottom: 2em;
+  text-align: left;
 }
 
 .post:hover {
@@ -117,4 +122,18 @@ a {
     overflow: hidden;
     object-fit: cover;
   }
+}
+
+#showMore {
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  margin-bottom: 3em;
+  font-weight: lighter;
+  border-radius: 0.3em;
+}
+
+#showMore:hover {
+  background-color: #444444;
 }

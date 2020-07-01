@@ -1,4 +1,5 @@
 let db = firebase.firestore();
+let postOffset = 1;
 
 window.addEventListener('load', renderStories);
 
@@ -14,8 +15,8 @@ function renderStories() {
           document.getElementById("featured-title").innerText = docc.data().Title;
           document.getElementById("featured-subtitle").innerText = docc.data().Subtitle;
         })
-        for (let i = 1; i < 17; i++) {
-          generatePost(doc.data().canon - i)
+        for (let i = postOffset; i < postOffset + 8; i++) {
+          generatePost(doc.data().canon - i);
         }
       })
     } else {
@@ -34,6 +35,10 @@ function generatePost(canonNum) {
   let subtitle = document.createElement("p");
   let articleRef = db.collection("posts").where("Canonical", "==", canonNum);
   articleRef.get().then(function(querySnapshot) {
+    if (querySnapshot.empty) {
+      document.getElementById("showMore").style.display = "none";
+    }
+    console.log(querySnapshot.empty)
     querySnapshot.forEach(function(doc) {
       post.href = "read.html?s=" + doc.id;
       post.classList.add("post")
@@ -46,8 +51,14 @@ function generatePost(canonNum) {
       post.appendChild(title);
       post.appendChild(subtitle);
       document.getElementsByClassName("other-posts")[0].appendChild(post);
+      postOffset++;
     })
   }).catch(function(error) {
     console.error("Error getting post:", error);
   })
 }
+
+document.getElementById("showMore").addEventListener("click", function(event) {
+  event.preventDefault();
+  renderStories();
+});
