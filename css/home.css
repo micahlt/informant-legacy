@@ -54,6 +54,7 @@ h2 {
   width: 100%;
   height: 40vh;
   object-fit: cover;
+  border-radius: 0.3em;
 }
 
 .featured-post h2 {
@@ -99,6 +100,12 @@ a {
   height: 15vw;
   overflow: hidden;
   object-fit: cover;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
+  border-radius: 0.3em;
+}
+
+.post-img-container:hover {
+  box-shadow: 0 0.1em 0.8em rgba(0, 0, 0, 0.5);
 }
 
 .post img {
@@ -121,6 +128,10 @@ a {
     height: 30vw;
     overflow: hidden;
     object-fit: cover;
+  }
+
+  .mobile-hidden {
+    display: none;
   }
 }
 

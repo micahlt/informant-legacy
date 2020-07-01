@@ -30,6 +30,7 @@ function renderStory() {
         document.getElementById("post-author").innerHTML = 'Written by <a href="https://scratch.mit.edu/users/' +
           doc.data().Author + '" target="_blank">' + doc.data().Author + '</a>';
         document.getElementById("post-date").innerText = doc.data().Date;
+        generatePosts(doc.data().Tags);
       } else {
         document.getElementById("fourOhFour").style.display = "block";
       }
@@ -39,15 +40,18 @@ function renderStory() {
   }
 }
 
-function generatePost(canonNum) {
+function generatePosts(tagsToGet) {
   let post = document.createElement("a");
   let image = document.createElement("img");
   let imageContainer = document.createElement("div");
   let title = document.createElement("h2");
   let subtitle = document.createElement("p");
-  let articleRef = db.collection("posts").where("Canonical", "==", canonNum);
+  let articleRef = db.collection("posts").where("Tags", "array-contains-any", tagsToGet);
+  console.log(tagsToGet);
+  articleRef.orderBy("Canonical").limit(4);
   articleRef.get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
+      console.log('Ready');
       post.href = "read.html?s=" + doc.id;
       post.classList.add("post")
       image.src = doc.data().Image;
@@ -58,7 +62,7 @@ function generatePost(canonNum) {
       post.appendChild(imageContainer);
       post.appendChild(title);
       post.appendChild(subtitle);
-      document.getElementsByClassName("other-posts")[0].appendChild(post);
+      document.getElementById("suggested").appendChild(post);
     })
   }).catch(function(error) {
     console.error("Error getting post:", error);
