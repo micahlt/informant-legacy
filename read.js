@@ -41,9 +41,8 @@ function renderStory() {
 }
 
 function generatePosts(tagsToGet) {
-  let articleRef = db.collection("posts").where("Tags", "array-contains-any", tagsToGet);
+  let articleRef = db.collection("posts").where("Tags", "array-contains-any", tagsToGet).orderBy("Canonical").limit(4);
   console.log(tagsToGet);
-  articleRef.orderBy("Canonical").limit(4);
   articleRef.get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
       let post = document.createElement("a");
