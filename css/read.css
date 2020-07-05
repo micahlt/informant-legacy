@@ -150,8 +150,19 @@ a:hover {
   right: 4vw;
 }
 
+#policies {
+  font-family: 'Noto Sans', sans-serif;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
 @media only screen and (max-width: 850px) {
   .mobile-hidden {
     display: none;
+  }
+
+  #policies {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }

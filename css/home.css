@@ -148,3 +148,18 @@ a {
 #showMore:hover {
   background-color: #444444;
 }
+
+.footer {
+  transform: translateY(3em) translateX(-5vw);
+  text-align: center;
+  width: 100vw;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+.footer a {
+  color: white;
+}
