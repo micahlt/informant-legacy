@@ -6,7 +6,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Playfair Display', serif;
   text-align: center;
 }
 
@@ -136,7 +136,7 @@ a {
 }
 
 #showMore {
-  font-family: 'Inter', sans-serif;
+  font-family: sans-serif;
   background-color: black;
   color: white;
   padding: 1em;
@@ -157,7 +157,7 @@ a {
   padding-bottom: 2em;
   background-color: black;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: sans-serif;
 }
 
 .footer a {
