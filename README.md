@@ -6,4 +6,5 @@ The Informant is a news source for the [Scratch](https://scratch.mit.edu/) commu
 
 ### Support us
 
-[Support Speedblocks](https://buymeacoff.ee/spdblx) [Support MicahLT](https://buymeacoff.ee/micahlt)
+[Support Speedblocks](https://buymeacoff.ee/spdblx)
+[Support MicahLT](https://buymeacoff.ee/micahlt)
