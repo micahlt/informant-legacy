@@ -136,12 +136,12 @@ a {
 }
 
 #showMore {
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: black;
   color: white;
   padding: 1em;
   margin-bottom: 3em;
-  font-weight: lighter;
+  font-weight: 500, bolder;
   border-radius: 0.3em;
 }
 
@@ -157,7 +157,7 @@ a {
   padding-bottom: 2em;
   background-color: black;
   color: white;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .footer a {
