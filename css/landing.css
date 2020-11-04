@@ -23,8 +23,8 @@ body {
 }
 
 h1 {
-  font-family: 'Inter; Playfair Display', sans-serif; serif;
-  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
   font-size: 1.3em;
   transform: translateY(-1em);
 }
