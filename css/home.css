@@ -141,6 +141,7 @@ a {
   color: white;
   padding: 1em;
   margin-bottom: 3em;
+  text-transform: none;
   font-weight: 700, bold;
   border-radius: 0.3em;
 }
