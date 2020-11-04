@@ -70,7 +70,7 @@ h2 {
   position: fixed;
   top: 4em;
   left: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   display: none;
   background: white;
   z-index: 1;
@@ -104,7 +104,7 @@ h1 {
   line-height: 180%;
   max-width: 800px;
   margin-bottom: 7vh;
-  font-family: 'Noto Sans', 'Playfair Display', sans-serif;
+  font-family: 'Inter', 'Playfair Display', sans-serif;
 }
 
 a {
@@ -151,7 +151,7 @@ a:hover {
 }
 
 #policies {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   padding-left: 20%;
   padding-right: 20%;
 }
