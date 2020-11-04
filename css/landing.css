@@ -30,9 +30,9 @@ h1 {
 }
 
 a {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  <!--text-transform: uppercase;-->
   padding: 1em;
   border-color: white;
   border-style: solid;
