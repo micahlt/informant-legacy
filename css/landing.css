@@ -47,17 +47,3 @@ a:hover {
   color: black;
   background-color: white;
 }
-
-testbutton {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  text-transform: none;
-  padding: 1em;
-  border-color: dark yellow;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 3px;
-  color: yellow;
-  text-decoration: none;
-  transition: 0.2s;
-}
