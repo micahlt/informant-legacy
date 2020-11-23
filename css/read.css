@@ -25,9 +25,9 @@ h2 {
 }
 
 .navbar img {
-  height: 3em;
+  height: 2em;
   position: fixed;
-  top: 0.5em;
+  top: 1em;
   left: 50%;
   transform: translateX(-50%);
 }
