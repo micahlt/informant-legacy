@@ -18,12 +18,13 @@ body {
 }
 
 .hero-logo {
-  max-width: 500px;
+  max-width: 250px;
   width: 80%;
+  margin-bottom: 40px;
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Inter', serif;
   font-weight: 500;
   font-size: 1.3em;
   transform: translateY(-1em);
