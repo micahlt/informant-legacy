@@ -6,12 +6,13 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
   text-align: center;
 }
 
 h2 {
-  font-weight: normal;
+  font-weight: 700;
 }
 
 .navbar {
@@ -59,7 +60,7 @@ h2 {
 
 .featured-post h2 {
   text-align: left;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 3.3em;
 }
 
