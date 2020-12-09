@@ -166,3 +166,10 @@ a {
 .footer a {
   color: white;
 }
+
+img.emoji {
+   height: 1.25em;
+   width: 1.25em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.25em;
+}
