@@ -208,7 +208,14 @@ img.emoji {
   font-family: 'Inter', sans-serif;
   display: block;
 }
-
+.navbar .dropbtn:hover {
+  outline: none;
+  box-shadow: none;
+}
+.navbar .dropdown-content:hover {
+  outline: none;
+  box-shadow: none;
+}
 /* Change color of dropdown links on hover */
 .navbar .dropdown-content a:hover {background-color: #ddd;}
 
