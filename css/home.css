@@ -175,7 +175,7 @@ img.emoji {
 }
 
 /* Dropdown Button */
-.navbar .dropbtn {
+.dropbtn {
   font-family: 'Inter', sans-serif;
   background-color: black;
   color: white;
@@ -189,13 +189,13 @@ img.emoji {
 }
 
 /* The container <div> - needed to position the dropdown content */
-.navbar .dropdown {
+.dropdown {
   position: relative;
   display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
-.navbar .dropdown-content {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #0A0A0A;
@@ -205,27 +205,27 @@ img.emoji {
 }
 
 /* Links inside the dropdown */
-.navbar .dropdown-content a {
+.dropdown-content a {
   color: white;
   padding: 12px 16px;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   display: block;
 }
-.navbar .dropbtn:hover {
+.dropbtn:hover {
   outline: none;
   box-shadow: none;
 }
-.navbar .dropdown-content:hover {
+.dropdown-content:hover {
   outline: none;
   box-shadow: none;
 }
 
 /* Change color of dropdown links on hover */
-.navbar .dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #ddd;}
 
 /* Show the dropdown menu on hover */
-.navbar .dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.navbar .dropdown:hover .dropbtn {background-color: #010101;}
+.dropdown:hover .dropbtn {background-color: #010101;}
