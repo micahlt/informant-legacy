@@ -180,8 +180,12 @@ img.emoji {
   background-color: black;
   color: white;
   padding: 16px;
-  font-size: 16px;
   border: none;
+  margin-top: 33px;
+  margin-right: 33px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -216,6 +220,7 @@ img.emoji {
   outline: none;
   box-shadow: none;
 }
+
 /* Change color of dropdown links on hover */
 .navbar .dropdown-content a:hover {background-color: #ddd;}
 
