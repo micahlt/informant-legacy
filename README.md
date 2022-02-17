@@ -1,11 +1,3 @@
-# The Informant
+The Informant was a news site by Sargent Coding. It is now shut down. If you wish to get updates about us, please join our Discord server at https://discord.gg/ZYwF9q8ChB.
 
-The Informant is a news source for the [Scratch](https://scratch.mit.edu/) community.  It ~~is~~ will be written by various authors around the website and ~~is~~ will be powered by [Vercel](https://vercel.com)'s serverless functions.
-
-~~Currently only the landing page is active, [here](https://informant.micahlindley.com).~~ It's active now!
-
-### Support us
-
-[Support Speedblocks](https://buymeacoff.ee/spdblx)
-
-[Support MicahLT](https://buymeacoff.ee/micahlt)
+Our Github organisation is @sargent-coding by the way.
