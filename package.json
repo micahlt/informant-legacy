@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/micahlt/scratch-informant#readme",
   "dependencies": {
-    "firebase": "^7.24.0"
+    "firebase": "^9.9.3"
   }
 }
