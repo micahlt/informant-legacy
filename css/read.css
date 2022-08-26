@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.2s;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Playfair Display', serif;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.navbar {
+  background: black;
+  height: 4em;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.navbar img {
+  height: 3em;
+  position: fixed;
+  top: 0.5em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main {
+  transform: translateY(5em);
+  width: 90vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.post-content {
+  transform: translateY(calc(5em + 9vh));
+}
+
+.featured-post {
+  transition: 0.3s;
+}
+
+.featured-post:hover {
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+}
+
+#post-img {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: -3em;
+  left: 0;
+  height: 20vh;
+  object-fit: cover;
+}
+
+#fourOhFour {
+  width: 100vw;
+  height: calc(100vh - 5em);
+  text-align: center;
+  position: fixed;
+  top: 4em;
+  left: 0;
+  font-family: 'Noto Sans', sans-serif;
+  display: none;
+  background: white;
+  z-index: 1;
+}
+
+.absolute-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  font-size: 5em;
+}
+
+#post-title {
+  font-weight: normal;
+  font-size: 3.3em;
+}
+
+.featured-post p {
+  font-size: 1.3em;
+  line-height: 2px;
+}
+
+.small-text {
+  font-size: 0.8em;
+}
+
+#post-para {
+  line-height: 180%;
+  max-width: 800px;
+  margin-bottom: 7vh;
+  font-family: 'Noto Sans', 'Playfair Display', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.post {
+  max-width: 20vw;
+  transform: translateY(-40%);
+  transition: 0.2s;
+}
+
+.post:hover {
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+}
+
+.post-img-container {
+  width: 100%;
+  padding-top: 10%;
+  border-radius: 0.3em;
+}
+
+.post img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-color: darkgray;
+}
+
+a:hover {
+  text-decoration-color: black;
+}
+
+#suggested {
+  max-width: 20vw;
+  position: absolute;
+  top: calc(4em + 22vh);
+  right: 4vw;
+}
+
+#policies {
+  font-family: 'Noto Sans', sans-serif;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+@media only screen and (max-width: 850px) {
+  .mobile-hidden {
+    display: none;
+  }
+
+  #policies {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}

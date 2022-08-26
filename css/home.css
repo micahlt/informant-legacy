@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.2s;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.navbar {
+  background: black;
+  height: 4em;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.navbar img {
+  height: 3em;
+  position: fixed;
+  top: 0.5em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main {
+  transform: translateY(5em);
+  width: 90vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-bottom: 3em;
+}
+
+.featured-post {
+  transition: 0.3s;
+}
+
+.featured-post:hover {
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+}
+
+.featured-post img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 0.3em;
+}
+
+.featured-post h2 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 3.3em;
+}
+
+.featured-post p {
+  text-align: left;
+  font-size: 1.3em;
+  line-height: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.other-posts {
+  display: grid;
+  grid-column-gap: 2em;
+  grid-row-gap: 0;
+  width: 100%;
+  margin-top: 0.1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.post {
+  max-width: 20vw;
+  transition: 0.2s;
+  margin-bottom: 2em;
+  text-align: left;
+}
+
+.post:hover {
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+}
+
+.post-img-container {
+  width: 20vw;
+  height: 15vw;
+  overflow: hidden;
+  object-fit: cover;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
+  border-radius: 0.3em;
+}
+
+.post-img-container:hover {
+  box-shadow: 0 0.1em 0.8em rgba(0, 0, 0, 0.5);
+}
+
+.post img {
+  height: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+  .other-posts {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .post {
+    max-width: 40vw;
+    transition: 0.2s;
+    margin-bottom: 2.5em;
+  }
+
+  .post-img-container {
+    width: 40vw;
+    height: 30vw;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+#showMore {
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  margin-bottom: 3em;
+  font-weight: lighter;
+  border-radius: 0.3em;
+}
+
+#showMore:hover {
+  background-color: #444444;
+}
+
+.footer {
+  transform: translateY(3em) translateX(-5vw);
+  text-align: center;
+  width: 100vw;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+.footer a {
+  color: white;
+}

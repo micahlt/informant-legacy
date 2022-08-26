@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="titleHtml">Policies | The Scratch Informant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/read.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110549622-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110549622-5');
+  </script>
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="home.html"><img src="assets/logo-white.svg" alt="The Informant"></a>
+  </div><br>
+  <div class="main">
+    <p id="policies"></p>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBQ8zhsj2m9FDRrlIdQi7lnJn0wxYY8yIU",
+      authDomain: "scratch-informant.firebaseapp.com",
+      databaseURL: "https://scratch-informant.firebaseio.com",
+      projectId: "scratch-informant",
+      storageBucket: "scratch-informant.appspot.com",
+      messagingSenderId: "238244990742",
+      appId: "1:238244990742:web:8a05b85706ffe2309a4a37"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script type="text/javascript" src="policies.js">
+  </script>
+</body>
+
+</html>
