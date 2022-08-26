@@ -1,7 +1,3 @@
-Fuck.
+This site was a project by Sargent Coding, and is dead now. Please visit [our site](https://saco.dev), it's fucking awesome!
 
-Now Micah's gonna cry because I wrote a swear word. Boo-hoo, get a life.
-
-https://aetinx.saco.dev
-
-P.S. I'm techincally the owner of this repo, in a way. Cope snowflake.
+Uh-oh, did I just write the word "fucking"? Now Micah's gonna cry because I wrote a swear word! Boo-hoo, get a life.
