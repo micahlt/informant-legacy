@@ -1,3 +1,5 @@
-The Informant was a news site by Sargent Coding. It is now shut down. If you wish to get updates about us, please join our Discord server at https://discord.gg/ZYwF9q8ChB.
+Fuck.
 
-Our Github organisation is @sargent-coding by the way.
+Now Micah's gonna cry because I wrote a swear word. Boo-hoo, get a life.
+
+https://aetinx.saco.dev
